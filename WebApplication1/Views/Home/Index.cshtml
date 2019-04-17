@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*<div style="height:650px; width:900px ">
+        <button class="button">Organizator</button>
+    </div>
+
+    <div>
+        <button class="button">Client</button>
+
+    </div>*@
+
+
+@*<div style="float:left;"><button class="button">Client</button></div>
+    <div style=" float:right;"><button class="button">Client</button></div>*@
+
+<div id="wrapper">
+
+    @*<a href="#">*@
+        <div id="leftcolumn">
+            <a href="@Url.Action("Organizator", "Home")">
+                <img src="~/img/organizator.jpg" alt="" style="height:600px; width:550px"/>
+            </a>
+           @*@Html.ActionLink(" ", "Organizator", "Home")*@
+        </div>
+    @*</a>*@
+   
+        <div id="rightcolumn">
+            <a href="@Url.Action("Client", "Home")">
+                <img src="~/img/client.jpg" style="height:600px; width:550px"/>
+            </a>
+           @*@Html.ActionLink(" ", "Client", "Home")*@
+        </div>
+  
+</div>
+
+
