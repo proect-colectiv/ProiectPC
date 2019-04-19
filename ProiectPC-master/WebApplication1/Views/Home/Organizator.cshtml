@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Organizator";
+}
+
+
+
+<img src="~/img/organizator2.jpg" alt="" style="height:300px; width:1110px" />
+<br />
+<br />
+
+    <div>
+        <table align="center" class="table table-dark">
+            <tr>
+                <td>
+                    Afis
+                </td>
+                <td>
+                    Nume Concert
+                </td>
+                &nbsp;
+                <td>
+                    Detalii
+                </td>
+                <td>
+                    Bilete Vandute
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <img src="~/img/concert1.jpg" alt="" style="height:150px; width:150px;  " />
+                </td>
+                <td>
+                    Carnival
+                </td>
+                <td>
+                    Data: vineri, 10 mai 2019- duminică, 12 mai 2019<br />
+                    Ora de incepere: 12:00<br />
+                    Loc: Muzeul Satului Bănățean, Timișoara 27433
+                </td>
+                <td>
+                   78
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="~/img/concert2.jpg" alt="" style="height:150px; width:150px;  " />
+                </td>
+                <td>
+                    MixMelody
+                </td>
+                <td>
+                    Data: marți, 16 aprilie 2019<br />
+                    Ora de incepere: 20:00<br />
+                    Loc: Sala Palatului, București 27422<br />
+                    Organizator: Fundația Copii în Dificultate
+                </td>
+                <td>
+                    230
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <a href="@Url.Action("AdaugaConcert", "Home")">
+                        Adauga Concert
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+    </div>
