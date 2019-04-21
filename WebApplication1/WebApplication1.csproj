@@ -247,6 +247,7 @@
     <Content Include="Views\Home\Client.cshtml" />
     <Content Include="Views\Home\Organizator.cshtml" />
     <Content Include="Views\Home\AdaugaConcert.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
