@@ -1,2 +1,0 @@
-#PCTest
-# ProiectPC
