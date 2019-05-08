@@ -248,6 +248,7 @@
     <Content Include="Views\Home\Organizator.cshtml" />
     <Content Include="Views\Home\AdaugaConcert.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\CreareCont.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
