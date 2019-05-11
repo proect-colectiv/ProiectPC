@@ -45,5 +45,15 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+        public ActionResult Rezervare()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+       public ActionResult Redirect()
+        {
+            return View("Rezervare");
+        }
     }
 }
