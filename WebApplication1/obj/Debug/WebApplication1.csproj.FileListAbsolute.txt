@@ -424,3 +424,6 @@ D:\PCApp\ProiectPC\WebApplication1\obj\Debug\WebApplication1.Migrations.Evenimen
 D:\PCApp\ProiectPC\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
 D:\PCApp\ProiectPC\WebApplication1\bin\WebApplication1.dll.CodeAnalysisLog.xml
 D:\PCApp\ProiectPC\WebApplication1\bin\WebApplication1.dll.lastcodeanalysissucceeded
+F:\PCApp\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
+F:\PCApp\WebApplication1\obj\Debug\WebApplication1.Migrations.RezervareClient.resources
+F:\PCApp\WebApplication1\obj\Debug\WebApplication1.Migrations.Eveniment.resources

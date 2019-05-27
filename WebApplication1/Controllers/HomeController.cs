@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.Models;
+
 
 namespace WebApplication1.Controllers
 {
+
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -17,6 +21,11 @@ namespace WebApplication1.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
+            return View();
+        }
+
+        public ActionResult test()
+        {
             return View();
         }
 
@@ -45,15 +54,27 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+
+
+        public ActionResult AdaugaConcert(Evenimente evenimente)
+        {
+          
+            return View("AdaugaConcert");
+        }
+
+      
+
         public ActionResult Rezervare()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
-       public ActionResult Redirect()
-        {
-            return View("Rezervare");
-        }
+     
     }
 }

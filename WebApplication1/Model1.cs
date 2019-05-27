@@ -16,5 +16,9 @@ namespace WebApplication1
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }
+
+        public System.Data.Entity.DbSet<WebApplication1.Models.RezervareClient> RezervareClients { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplication1.Models.Evenimente> Evenimentes { get; set; }
     }
 }

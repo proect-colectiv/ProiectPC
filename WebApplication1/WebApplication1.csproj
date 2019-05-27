@@ -139,18 +139,25 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="AssemblyInitializeAttribute.cs" />
+    <Compile Include="Controllers\EvenimentesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RezervareClientsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905111314598_Evenimente.cs" />
-    <Compile Include="Migrations\201905111314598_Evenimente.Designer.cs">
-      <DependentUpon>201905111314598_Evenimente.cs</DependentUpon>
+    <Compile Include="Migrations\201905271910045_RezervareClient.cs" />
+    <Compile Include="Migrations\201905271910045_RezervareClient.Designer.cs">
+      <DependentUpon>201905271910045_RezervareClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905271919576_Eveniment.cs" />
+    <Compile Include="Migrations\201905271919576_Eveniment.Designer.cs">
+      <DependentUpon>201905271919576_Eveniment.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
-    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\RezervareClient.cs" />
     <Compile Include="Models\Evenimente.cs" />
+    <Compile Include="Models\WebApplication1Context.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlDatabaseSetup.cs" />
     <Compile Include="SqlServerUnitTest1.cs">
@@ -255,11 +262,16 @@
     <Content Include="Views\Home\Organizator.cshtml" />
     <Content Include="Views\Home\AdaugaConcert.cshtml" />
     <Content Include="Views\Home\Rezervare.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905111314598_Evenimente.resx">
-      <DependentUpon>201905111314598_Evenimente.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="Views\RezervareClients\Create.cshtml" />
+    <Content Include="Views\RezervareClients\Delete.cshtml" />
+    <Content Include="Views\RezervareClients\Details.cshtml" />
+    <Content Include="Views\RezervareClients\Edit.cshtml" />
+    <Content Include="Views\RezervareClients\Index.cshtml" />
+    <Content Include="Views\Evenimentes\Create.cshtml" />
+    <Content Include="Views\Evenimentes\Delete.cshtml" />
+    <Content Include="Views\Evenimentes\Details.cshtml" />
+    <Content Include="Views\Evenimentes\Edit.cshtml" />
+    <Content Include="Views\Evenimentes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -285,6 +297,14 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905271910045_RezervareClient.resx">
+      <DependentUpon>201905271910045_RezervareClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905271919576_Eveniment.resx">
+      <DependentUpon>201905271919576_Eveniment.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
